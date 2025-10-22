@@ -33,10 +33,24 @@ function App() {
   };
 
   const configureGame = (config) => {
+    console.log('Configuring game:', config);
     setGameConfig(config);
     if (config.useQR) {
       setCurrentScreen('qr-mode');
     } else {
+      // Generar jugadores inmediatamente para modo normal
+      const newPlayers = Array.from({ length: config.numPlayers }, (_, index) => ({
+        id: index + 1,
+        isImpostor: false
+      }));
+      
+      // Seleccionar impostor aleatorio
+      const impostorIndex = Math.floor(Math.random() * config.numPlayers);
+      newPlayers[impostorIndex].isImpostor = true;
+      
+      console.log('Generated players:', newPlayers);
+      setPlayers(newPlayers);
+      setCurrentPlayerIndex(0);
       setCurrentScreen('distribution');
     }
   };
@@ -76,6 +90,7 @@ function App() {
           gameConfig={gameConfig} 
           onStartDistribution={startDistribution}
           onBack={() => setCurrentScreen('config')}
+          onFinish={() => setCurrentScreen('final')}
         />;
       case 'distribution':
         return <PlayerDistributionScreen 

@@ -6,11 +6,8 @@ const HomeScreen = ({ onStart }) => {
       <div className="card max-w-md mx-auto w-full">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-white mb-4 animate-bounce-gentle">
-            🎭 Impostor Game
+            🎭 Juego del Impostor
           </h1>
-          <p className="text-dark-300 text-lg">
-            El juego viral de TikTok
-          </p>
         </div>
         
         <div className="mb-8">
@@ -27,7 +24,7 @@ const HomeScreen = ({ onStart }) => {
               <li>• Todos reciben la misma palabra</li>
               <li>• Uno es el impostor (no la ve)</li>
               <li>• Describan sin decir la palabra</li>
-              <li>• ¡Descubran al impostor!</li>
+              <li>• ¡Descubrid al impostor!</li>
             </ul>
           </div>
         </div>

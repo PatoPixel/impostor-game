@@ -11,6 +11,38 @@ const PlayerDistributionScreen = ({
   const currentPlayer = players[currentPlayerIndex];
   const isLastPlayer = currentPlayerIndex === players.length - 1;
 
+  // Debug: mostrar información del estado
+  console.log('PlayerDistributionScreen - players:', players);
+  console.log('PlayerDistributionScreen - currentPlayerIndex:', currentPlayerIndex);
+  console.log('PlayerDistributionScreen - currentPlayer:', currentPlayer);
+
+  // Validación de seguridad
+  if (!currentPlayer || !players.length) {
+    return (
+      <div className="screen-transition flex flex-col items-center justify-center min-h-screen px-4">
+        <div className="card max-w-lg mx-auto w-full text-center">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              ⚠️ Error
+            </h2>
+            <p className="text-dark-300 text-lg">
+              No se encontraron jugadores. Por favor, vuelve a la configuración.
+            </p>
+            <p className="text-dark-400 text-sm mt-2">
+              Debug: players.length = {players.length}, currentPlayerIndex = {currentPlayerIndex}
+            </p>
+          </div>
+          <button
+            onClick={onBack}
+            className="btn-primary text-lg py-4 px-8"
+          >
+            ← Volver a configuración
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   const handleShowWord = () => {
     setShowWord(true);
   };

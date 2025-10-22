@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import QRCode from 'qrcode';
 
-const QRModeScreen = ({ gameConfig, onStartDistribution, onBack }) => {
+const QRModeScreen = ({ gameConfig, onStartDistribution, onBack, onFinish }) => {
   const [players, setPlayers] = useState([]);
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [qrCodes, setQrCodes] = useState({});
@@ -65,7 +65,13 @@ const QRModeScreen = ({ gameConfig, onStartDistribution, onBack }) => {
       setCurrentPlayerIndex(currentPlayerIndex + 1);
       setShowQR(false);
     } else {
-      onStartDistribution();
+      // En modo QR, ir directamente a la pantalla final
+      if (onFinish) {
+        onFinish();
+      } else {
+        // Fallback: recargar para volver al inicio
+        window.location.reload();
+      }
     }
   };
 
