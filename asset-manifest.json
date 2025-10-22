@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/impostor-game/static/css/main.26fa0c7e.css",
+    "main.js": "/impostor-game/static/js/main.6b1f1e4c.js",
+    "index.html": "/impostor-game/index.html",
+    "main.26fa0c7e.css.map": "/impostor-game/static/css/main.26fa0c7e.css.map",
+    "main.6b1f1e4c.js.map": "/impostor-game/static/js/main.6b1f1e4c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26fa0c7e.css",
+    "static/js/main.6b1f1e4c.js"
+  ]
+}
