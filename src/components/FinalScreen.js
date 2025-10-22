@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FinalScreen = ({ onRestart }) => {
+const FinalScreen = ({ onRestart, gameConfig }) => {
   return (
     <div className="screen-transition flex flex-col items-center justify-center min-h-screen text-center px-4">
       <div className="card max-w-lg mx-auto w-full">
@@ -34,6 +34,20 @@ const FinalScreen = ({ onRestart }) => {
               <span>¡Diviértanse y buena suerte!</span>
             </div>
           </div>
+          
+          {gameConfig?.category && (
+            <div className="mt-4 pt-4 border-t border-dark-600">
+              <div className="text-white font-medium mb-2">📚 Categoría seleccionada:</div>
+              <div className="text-primary-400 font-semibold">
+                {gameConfig.category.name}
+              </div>
+              {gameConfig.category.type === 'custom' && (
+                <div className="text-dark-400 text-sm mt-1">
+                  {gameConfig.category.words.length} palabras personalizadas
+                </div>
+              )}
+            </div>
+          )}
         </div>
         
         <div className="space-y-4">

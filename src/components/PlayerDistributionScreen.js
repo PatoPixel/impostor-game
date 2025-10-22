@@ -56,7 +56,7 @@ const PlayerDistributionScreen = ({
     if (gameConfig.impostorMode === 'sin-palabra') {
       return {
         title: 'Eres el impostor 👀',
-        message: 'No tienes palabra. ¡Intenta no ser descubierto!',
+        message: 'Eres el impostor 👀',
         color: 'text-red-400'
       };
     } else {

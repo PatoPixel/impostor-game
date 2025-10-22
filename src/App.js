@@ -11,7 +11,8 @@ function App() {
     numPlayers: 3,
     impostorMode: 'sin-palabra',
     word: '',
-    useQR: false
+    useQR: false,
+    category: null
   });
   const [players, setPlayers] = useState([]);
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
@@ -22,7 +23,8 @@ function App() {
       numPlayers: 3,
       impostorMode: 'sin-palabra',
       word: '',
-      useQR: false
+      useQR: false,
+      category: null
     });
     setPlayers([]);
     setCurrentPlayerIndex(0);
@@ -101,7 +103,7 @@ function App() {
           onBack={() => setCurrentScreen('config')}
         />;
       case 'final':
-        return <FinalScreen onRestart={resetGame} />;
+        return <FinalScreen onRestart={resetGame} gameConfig={gameConfig} />;
       default:
         return <HomeScreen onStart={startGame} />;
     }
