@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/impostor-game/static/css/main.d3c7680d.css",
-    "main.js": "/impostor-game/static/js/main.daaa7f5d.js",
+    "main.css": "/impostor-game/static/css/main.0f95ebdc.css",
+    "main.js": "/impostor-game/static/js/main.96900b2a.js",
     "index.html": "/impostor-game/index.html",
-    "main.d3c7680d.css.map": "/impostor-game/static/css/main.d3c7680d.css.map",
-    "main.daaa7f5d.js.map": "/impostor-game/static/js/main.daaa7f5d.js.map"
+    "main.0f95ebdc.css.map": "/impostor-game/static/css/main.0f95ebdc.css.map",
+    "main.96900b2a.js.map": "/impostor-game/static/js/main.96900b2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3c7680d.css",
-    "static/js/main.daaa7f5d.js"
+    "static/css/main.0f95ebdc.css",
+    "static/js/main.96900b2a.js"
   ]
 }
