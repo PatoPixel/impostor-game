@@ -17,36 +17,37 @@ const QRModeScreen = ({ gameConfig, onStartDistribution, onBack }) => {
     // Seleccionar impostor aleatorio
     const impostorIndex = Math.floor(Math.random() * gameConfig.numPlayers);
     newPlayers[impostorIndex].isImpostor = true;
-    
     setPlayers(newPlayers);
+
+    // generateQRCodes moved inside the effect so it's stable for linting
+    const generateQRCodes = async (playersList) => {
+      const codes = {};
+      
+      for (let i = 0; i < playersList.length; i++) {
+        const player = playersList[i];
+        const playerData = {
+          playerId: player.id,
+          isImpostor: player.isImpostor,
+          word: player.isImpostor
+            ? (gameConfig.impostorMode === 'sin-palabra'
+                ? null
+                : getRandomDifferentWord())
+            : gameConfig.word
+        };
+        
+        try {
+          const qrData = await QRCode.toDataURL(JSON.stringify(playerData));
+          codes[player.id] = qrData;
+        } catch (error) {
+          console.error('Error generating QR:', error);
+        }
+      }
+      
+      setQrCodes(codes);
+    };
+
     generateQRCodes(newPlayers);
   }, [gameConfig]);
-
-  const generateQRCodes = async (playersList) => {
-    const codes = {};
-    
-    for (let i = 0; i < playersList.length; i++) {
-      const player = playersList[i];
-      const playerData = {
-        playerId: player.id,
-        isImpostor: player.isImpostor,
-        word: player.isImpostor 
-          ? (gameConfig.impostorMode === 'sin-palabra' 
-              ? null 
-              : getRandomDifferentWord())
-          : gameConfig.word
-      };
-      
-      try {
-        const qrData = await QRCode.toDataURL(JSON.stringify(playerData));
-        codes[player.id] = qrData;
-      } catch (error) {
-        console.error('Error generating QR:', error);
-      }
-    }
-    
-    setQrCodes(codes);
-  };
 
   const getRandomDifferentWord = () => {
     const differentWords = [
