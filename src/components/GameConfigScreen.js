@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CategorySelectionScreen from './CategorySelectionScreen';
 
 const GameConfigScreen = ({ onConfigure, onBack }) => {
+  const numeroMaximoDeJugadores = 20;
   const [numPlayers, setNumPlayers] = useState(3);
   const [impostorMode, setImpostorMode] = useState('sin-palabra');
   const [word, setWord] = useState('');
@@ -90,15 +91,15 @@ const GameConfigScreen = ({ onConfigure, onBack }) => {
               </span>
               <button
                 type="button"
-                onClick={() => setNumPlayers(Math.min(10, numPlayers + 1))}
+                onClick={() => setNumPlayers(Math.min(numeroMaximoDeJugadores, numPlayers + 1))}
                 className="btn-secondary px-3 py-2 text-lg"
-                disabled={numPlayers >= 10}
+                disabled={numPlayers >= numeroMaximoDeJugadores}
               >
                 +
               </button>
             </div>
             <p className="text-dark-400 text-sm mt-1">
-              Mínimo 3, máximo 10 jugadores
+              Mínimo 3, máximo {numeroMaximoDeJugadores} jugadores
             </p>
           </div>
 
