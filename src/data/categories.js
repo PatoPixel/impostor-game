@@ -156,46 +156,98 @@ export const categories = {
     'Hollow Knight', 'Cuphead', 'No Man’s Sky', 'Monster Hunter: World', 'Spider-Man 2', 'Metal Gear Solid V', 'Ghost of Tsushima'
   ]
 },
-'clashRoyale': {
+'cartasClashRoyale': {
   name: 'Cartas de Clash Royale',
-  description: 'Cartas y tropas del juego Clash Royale',
+  description: 'Todas las cartas disponibles en Clash Royale hasta 2025',
   words: [
-    'Caballero', 'Arqueras', 'Duendes', 'Esqueletos', 'Valquiria',
-    'Mini P.E.K.K.A', 'Mosquetera', 'Bebé Dragón', 'Príncipe', 'Bruja',
-    'Gigante', 'Montapuercos', 'Ariete de Batalla', 'Mago Eléctrico', 'Megaesbirro',
-    'Espíritu de Hielo', 'Espíritus de Fuego', 'Descarga', 'Flechas', 'Rayo',
-    'Bola de Fuego', 'Cohete', 'Hielo', 'Veneno', 'Cementerio',
-    'P.E.K.K.A', 'Megacaballero', 'Chispitas', 'Leñador', 'Bandida',
-    'Minero', 'Princesa', 'Arquero Mágico', 'Fantasma Real', 'Dragón Eléctrico',
-    'Cazador', 'Pescador', 'Carro de Cañón', 'Príncipe Oscuro', 'Barril de Duendes',
-    'Ejército de Esqueletos', 'Dragón Infernal', 'Gigante Esqueleto', 'Gigante Noble', 'Ballesta',
-    'Mortero', 'Tesla', 'Gólem', 'Sabueso de Lava', 'Reina Arquera'
+    'Arquero Mágico', 'Bárbaros', 'Bárbaros de Élite', 'Barril de Bárbaro', 'Barril de Duendes',
+    'Bebé Dragón', 'Bombardero', 'Bruja', 'Bruja Madre', 'Caballero', 'Cañón', 'Cañón con Ruedas',
+    'Chispitas', 'Clon', 'Cohete', 'Curación', 'Dragón Eléctrico', 'Dragón Infernal',
+    'Duende Gigante', 'Duende Lanzadardos', 'Duendes', 'Duendes con Lanza', 'Electrocutadores',
+    'Electrodragón', 'Elixir', 'El Tronco', 'Esbirros', 'Esqueleto Gigante', 'Esqueletos',
+    'Espíritu de Fuego', 'Espíritu de Hielo', 'Espíritu Eléctrico', 'Espíritu Sanador',
+    'Flechas', 'Gigante', 'Gigante Noble', 'Globo Bombástico', 'Gólem', 'Gólem de Hielo',
+    'Guardias', 'Horda de Esbirros', 'Jaula del Forzudo', 'Lanzafuegos', 'Leñador',
+    'Mago', 'Mago de Hielo', 'Mago Eléctrico', 'Megacaballero', 'Mini P.E.K.K.A.',
+    'Minero', 'Montapuercos', 'Mosquetera', 'Murciélagos', 'P.E.K.K.A.', 'Pandilla de Duendes',
+    'Príncipe', 'Príncipe Oscuro', 'Rayo', 'Reclutas Reales', 'Reina Arquera',
+    'Rompemuros', 'Sabueso de Lava', 'Sanadora Guerrera', 'Semental Real', 'Tesla',
+    'Tornado', 'Torre Bombardera', 'Torre Infernal', 'Valquiria', 'Veneno',
+    'Verdugo', 'Zap', 'Zappies', 'Cazador', 'Campeón Esqueleto', 'Gran Minero',
+    'Fénix', 'Arquera', 'Caballero Dorado', 'Duende Verde', 'Monje', 'Enredadera',
+    'Torre Tesla', 'Choza de Bárbaros', 'Choza de Duendes', 'Mortero', 'Ballesta',
+    'Espejo', 'Furia', 'Reclutas Reales', 'Barril de Esqueletos', 'Torre Bombardera',
+    'Torre Tesla', 'Torre Infernal', 'Cementerio', 'Megaballesta', 'Torre de Bombas',
+    'Torre de Arqueras', 'Torre de Duendes', 'Torre de Bárbaros', 'Torre de Esqueletos'
   ]
 },
-
 
 'lol': {
   name: 'Campeones de League of Legends',
   description: 'Campeones del universo de LoL',
   words: [
     'Aatrox', 'Ahri', 'Akali', 'Akshan', 'Alistar', 'Ambessa', 'Amumu', 'Anivia', 'Annie', 'Aphelios',
-    'Ashe', 'Aurelion Sol', 'Aurora', 'Azir', 'Bel’Veth', 'Briar', 'Bard', 'Blitzcrank', 'Brand', 'Braum',
-    'Caitlyn', 'Camille', 'Cassiopeia', 'Cho’Gath', 'Corki', 'Darius', 'Diana', 'Dr. Mundo', 'Draven', 'Ekko',
+    'Ashe', 'Aurelion Sol', 'Aurora', 'Azir', 'Bel/Veth', 'Briar', 'Bard', 'Blitzcrank', 'Brand', 'Braum',
+    'Caitlyn', 'Camille', 'Cassiopeia', 'Cho/Gath', 'Corki', 'Darius', 'Diana', 'Dr. Mundo', 'Draven', 'Ekko',
     'Elise', 'Evelynn', 'Ezreal', 'Fiddlesticks', 'Fiora', 'Fizz', 'Galio', 'Gangplank', 'Garen', 'Gnar',
     'Gragas', 'Graves', 'Gwen', 'Hecarim', 'Heimerdinger', 'Illaoi', 'Irelia', 'Ivern', 'Janna', 'Jarvan IV',
-    'Jax', 'Jayce', 'Jhin', 'Jinx', 'Kai’Sa', 'Kalista', 'Karthus', 'Kassadin', 'Katarina', 'Kayle', 'Kayn',
-    'Kennen', 'Kha’Zix', 'Kindred', 'Kled', 'Kog’Maw', 'K’Sante', 'LeBlanc', 'Lee Sin', 'Leona', 'Lillia',
+    'Jax', 'Jayce', 'Jhin', 'Jinx', 'Kai/Sa', 'Kalista', 'Karthus', 'Kassadin', 'Katarina', 'Kayle', 'Kayn',
+    'Kennen', 'Kha/Zix', 'Kindred', 'Kled', 'Kog/Maw', 'K/Sante', 'LeBlanc', 'Lee Sin', 'Leona', 'Lillia',
     'Lissandra', 'Lucian', 'Lulu', 'Lux', 'Malphite', 'Malzahar', 'Maokai', 'Master Yi', 'Mel', 'Miss Fortune',
     'Mordekaiser', 'Morgana', 'Nami', 'Nasus', 'Nautilus', 'Neeko', 'Nilah', 'Nocturne', 'Nunu & Willump',
-    'Olaf', 'Orianna', 'Ornn', 'Pantheon', 'Poppy', 'Pyke', 'Qiyana', 'Quinn', 'Rakan', 'Rammus', 'Rek’Sai',
+    'Olaf', 'Orianna', 'Ornn', 'Pantheon', 'Poppy', 'Pyke', 'Qiyana', 'Quinn', 'Rakan', 'Rammus', 'Rek/Sai',
     'Renata Glasc', 'Rengar', 'Riven', 'Rumble', 'Ryze', 'Samira', 'Sejuani', 'Senna', 'Seraphine', 'Sett',
     'Shaco', 'Shen', 'Shyvana', 'Singed', 'Sion', 'Sivir', 'Skarner', 'Sona', 'Soraka', 'Swain', 'Sylas',
     'Syndra', 'Tahm Kench', 'Taliyah', 'Talon', 'Taric', 'Teemo', 'Thresh', 'Tristana', 'Trundle', 'Tryndamere',
-    'Twisted Fate', 'Twitch', 'Udyr', 'Urgot', 'Varus', 'Vayne', 'Veigar', 'Vel’Koz', 'Vi', 'Viktor', 'Vladimir',
-    'Volibear', 'Warwick', 'Xayah', 'Xerath', 'Xin Zhao', 'Yasuo', 'Yorick', 'Yuumi', 'Zac', 'Zed', 'Zeri',
+    'Twisted Fate', 'Twitch', 'Udyr', 'Urgot', 'Varus', 'Vayne', 'Veigar', 'Vel/Koz', 'Vi', 'Viktor', 'Vladimir',
+    'Volibear', 'Warwick', 'Xayah', 'Xerath', 'Xin Zhao', 'Yasuo', 'Yorick', 'Yuumi', 'Yunara', 'Zac', 'Zed', 'Zeri',
     'Ziggs', 'Zilean', 'Zoe', 'Zyra'
   ]
 },
+'superheroes': {
+  name: 'Superhéroes',
+  description: 'Personajes de cómics y películas de superhéroes',
+  words: [
+    'Spider-Man', 'Iron Man', 'Captain America', 'Thor', 'Hulk',
+    'Black Widow', 'Hawkeye', 'Doctor Strange', 'Black Panther', 'Ant-Man',
+    'Wasp', 'Scarlet Witch', 'Vision', 'Falcon', 'Winter Soldier',
+    'Captain Marvel', 'Star-Lord', 'Gamora', 'Drax', 'Rocket Raccoon',
+    'Groot', 'Nebula', 'Loki', 'Deadpool', 'Wolverine',
+    'Professor X', 'Cyclops',
+    'Magneto', 'Daredevil', 'Iron Fist',
+    'The Punisher', 'Spider-Woman', 'She-Hulk', 'Doctor Doom', 'Green Lantern',
+    'Superman', 'Batman', 'Wonder Woman', 'Flash', 'Aquaman',
+    'Cyborg', 'Green Arrow', 'Shazam', 'Robin'
+  ]
+},
+'futbolistasMiticos': {
+  name: 'Futbolistas míticos',
+  description: 'Jugadores de fútbol legendarios de todos los tiempos',
+  words: [
+    'Pelé', 'Diego Maradona', 'Johan Cruyff', 'Zinedine Zidane',
+    'Michel Platini', 'Ronaldinho', 'Ronaldo Nazário', 'Cristiano Ronaldo', 'Lionel Messi',
+    'George Best', 'Alfredo Di Stéfano', 'Roberto Baggio', 'Paolo Maldini', 'Lev Yashin',
+    'Ferenc Puskás', 'Gerd Müller', 'Marco van Basten', 'Bobby Charlton', 'Thierry Henry',
+    'Eusébio', 'Romário', 'David Beckham', 'Andrés Iniesta', 'Xavi Hernández',
+    'Kaká', 'Ryan Giggs', 'Francesco Totti', 'Hristo Stoichkov', 'Lothar Matthäus',
+    'Diego Forlán', 'Gabriel Batistuta', 'Socrates', 'Rivaldo', 'Roberto Carlos',
+    'Paolo Rossi', 'Gianluigi Buffon', 'Carlos Valderrama', 'Iker Casillas', 'Sepp Maier', 'Jean-Pierre Papin', 'Marcelo Salas', 'Ruud Gullit', 'Michel Laudrup', 'Paolo Guerrero'
+  ]
+},
+'youtubersHispanos': {
+  name: 'Youtubers hispanos',
+  description: 'Creadores de contenido populares en YouTube de habla hispana',
+  words: [
+    'ElRubius', 'AuronPlay', 'Vegetta777', 'TheGrefg',
+    'Luisito Comunica', 'HolaSoyGerman', 'Willyrex', 'xFaRgAnx',
+    'Dalas Review', 'Fernanfloo', 'Luzu', 'Mangel',
+    'Alexby11', 'iTownGamePlay', 'DrossRotzank',
+    'ByViruZz', 'ibai', 'sarinha', 'gona89',
+    'Mikecrack', 'Knekro',
+    'Zorman', 'Wismichu', 'MrJagger',
+  ]
+}
+
 
 };
 
